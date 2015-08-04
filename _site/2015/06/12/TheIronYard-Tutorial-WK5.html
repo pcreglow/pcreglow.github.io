@@ -1,0 +1,58 @@
+<p><strong>Final Draft - Tutorial Journal Week 5</strong></p>
+
+<p><strong>Renaming and moving a file with Git</strong></p>
+
+<p>One of my first successful experiences while using Git was renaming and moving a file. To be able to accomplish this with the command line over Finder or on GitHub was a huge boost in confidence for a beginner like me. Try it for yourself!</p>
+
+<p>Here is the step-by-step for renaming and moving a file:</p>
+
+<ol>
+  <li>
+    <p>I have identified the file <code>test.css</code> in my <code>TIY-Github</code> repository.</p>
+  </li>
+  <li>
+    <p>I had been using <code>test.css</code> to test some CSS properties. I like the work I was able to produce so it’s time to rename this file <code>main.css</code></p>
+  </li>
+  <li>
+    <p>Now that I have determined a new name for this file, let’s go to Git and make the change with the following command:</p>
+
+    <p><code>git mv test.css main.css</code></p>
+  </li>
+  <li>
+    <p>Now let’s run <code>git status</code> to verifiy the change was made</p>
+  </li>
+  <li>
+    <p>Success! We aren’t done yet. It’s time to add that change to the stage with <code>git add main.css</code></p>
+  </li>
+  <li>
+    <p>Now let’s commit that change with <code>git commit</code>- be sure to include a commit message! - and then continue on to moving that file into a new directory.</p>
+  </li>
+  <li>
+    <p>So now we have <code>main.css</code> but it currently resides in my <code>TIY-Github</code> repository. That’s fine, but it should move into my CSS directory in ~TIY-Github~. So lets send that file on the move:</p>
+
+    <p><code>git mv main.css css/main.css</code></p>
+  </li>
+  <li>
+    <p>Once again, let’s run <code>git status</code> to make sure that change was made.</p>
+  </li>
+  <li>
+    <p>Success! But let’s double check our work by inspecting the CSS directory:</p>
+
+    <p><code>cd css</code></p>
+  </li>
+  <li>
+    <p>Let’s view the contents with <code>l</code></p>
+  </li>
+  <li>
+    <p>Hey there is <code>main.css</code>!</p>
+  </li>
+  <li>
+    <p>So now we <code>git add main.css</code> to bring that change to the stage.</p>
+  </li>
+  <li>
+    <p>Once more with <code>git status</code> to verify that change is on the stage. Run another <code>git commit</code> and add a commit message.</p>
+  </li>
+  <li>
+    <p>Congratulations! You renamed and moved a file.</p>
+  </li>
+</ol>
