@@ -110,15 +110,14 @@ gulp.task('serve', ['styles', 'fonts'], () => {
     server: {
       baseDir: ['app', '.tmp'],
       routes: {
-        '/bower_components': 'bower_components',
-        '/api': 'api'
+        '/bower_components': 'bower_components'
       }
     },
     directory: true
   });
 
   gulp.watch([
-    'app/*.html',
+    '*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
