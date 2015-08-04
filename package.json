@@ -41,13 +41,13 @@
   },
   "name": "pcreglow.github.io",
   "description": "Phillip Creglow - Profile",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "gulpfile.babel.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    
+
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
