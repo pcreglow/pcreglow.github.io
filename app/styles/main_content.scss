@@ -113,14 +113,16 @@ main {
           .heading-button {
             margin-top: 3.125rem;
 
-            svg {
-              width: 35px;
-              height: 25px;
-              margin-top: 0.3125rem;
-            }
+            button {
+              svg {
+                width: 35px;
+                height: 25px;
+                margin-top: 0.3125rem;
+              }
 
-            p {
-              margin: 0.625rem 0 0.625rem 0.9375rem;
+              p {
+                margin: 0.625rem 0 0.625rem 0.9375rem;
+              }
             }
           }
         }
