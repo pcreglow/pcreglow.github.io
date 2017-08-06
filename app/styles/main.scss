@@ -26,7 +26,6 @@ h4 {
 
 /** HEADER **/
 header {
-  border-bottom: 1px solid #555;
   width: 100%;
 	position: fixed;
   top: 0;
@@ -61,15 +60,27 @@ nav {
     font-size: 0.75rem;
     padding: 0.5rem 0 0.5rem 0.25rem;
   }
+  a {
+    color: #637988;
+  }
 
-  li:hover {
+  a:hover {
     color: #00c7fc;
     cursor: pointer;
+    text-decoration: none;
   }
 }
 
 /** MAIN **/
 
+main {
+  #home {
+    margin-top: 85px;
+    height: 150px;
+    background: url('/images/orlando_main.png') center center no-repeat;
+    background-size: cover;
+  }
+}
 
 
 /** TABLET **/
@@ -80,7 +91,15 @@ nav {
       padding-left: 0.75rem;
     }
   }
+
+  main {
+    #home {
+      height: 350px;
+    }
+  }
 }
+
+
 /** DESKTOP **/
 @media screen and (min-width: 768px) {
   header {
@@ -105,6 +124,11 @@ nav {
     li {
       font-size: 0.9375rem;
       padding: 2.125rem 0 1.5rem 1.25rem;
+    }
+  }
+  main {
+    #home {
+      height: 550px;
     }
   }
 }
