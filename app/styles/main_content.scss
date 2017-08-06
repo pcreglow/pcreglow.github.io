@@ -41,6 +41,35 @@ main {
         content: "";
         margin: 0 auto 1rem;
       }
+      .heading-button {
+        margin-top: 3.125rem;
+        button {
+          background: #00c7fc;
+          text-transform: uppercase;
+          border: #00c7fc;
+          font-family: 'Montserrat', sans-serif;
+          cursor: pointer;
+        }
+        svg {
+          width: 35px;
+          height: 25px;
+          fill: #fff;
+          display: inline-block;
+          margin-top: 0.3125rem;
+        }
+        p {
+          display: inline-block;
+          float: right;
+          margin: 0.625rem 0 0.625rem 0.9375rem
+        }
+        button:hover {
+          background: #fff;
+          color: #00c7fc;
+          svg {
+            fill: #00c7fc;
+          }
+        }
+      }
     }
   }
 }
