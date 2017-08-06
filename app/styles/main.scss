@@ -23,14 +23,12 @@ h4 {
 .container-fluid {
   padding: 0;
 }
-
 /** HEADER **/
 header {
   width: 100%;
-	position: fixed;
+  position: fixed;
   top: 0;
   overflow: hidden;
-
 
   h1 {
     text-transform: uppercase;
@@ -48,7 +46,6 @@ header {
 }
 /** NAVIGATION **/
 nav {
-
   ul {
     text-align: center;
     margin: 0;
@@ -60,6 +57,7 @@ nav {
     font-size: 0.75rem;
     padding: 0.5rem 0 0.5rem 0.25rem;
   }
+
   a {
     color: #637988;
   }
@@ -70,19 +68,24 @@ nav {
     text-decoration: none;
   }
 }
-
 /** MAIN **/
-
 main {
   #home {
     margin-top: 85px;
     height: 150px;
     background: url('/images/orlando_main.png') center center no-repeat;
     background-size: cover;
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
 }
-
-
 /** TABLET **/
 @media screen and (min-width: 500px) {
   nav {
@@ -98,8 +101,6 @@ main {
     }
   }
 }
-
-
 /** DESKTOP **/
 @media screen and (min-width: 768px) {
   header {
@@ -116,19 +117,23 @@ main {
       font-size: 2.5rem;
     }
   }
-nav {
-  ul {
-  width: 60%;
-  float: right;
-}
+
+  nav {
+    ul {
+      width: 60%;
+      float: right;
+    }
+
     li {
       font-size: 0.9375rem;
       padding: 2.125rem 0 1.5rem 1.25rem;
     }
   }
+
   main {
     #home {
       height: 550px;
+      margin-top: 90px;
     }
   }
 }
