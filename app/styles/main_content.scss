@@ -1,0 +1,142 @@
+/** MAIN **/
+main {
+  #home {
+    margin-top: 85px;
+    height: 150px;
+    background: url('/images/orlando_main2.png') center center no-repeat;
+    background-size: cover;
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .main-image-content {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: #fff;
+
+      .main-heading {
+        margin: 0 auto;
+
+        h1 {
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 1.125rem;
+        }
+
+        p {
+          text-transform: uppercase;
+          font-size: 0.75rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .break {
+          width: 150px;
+          border-bottom: 2px solid #00c7fc;
+          content: "";
+          margin: 0 auto 0.5rem;
+        }
+
+        .heading-button {
+          margin-top: 0.125rem;
+
+          button {
+            background: #00c7fc;
+            text-transform: uppercase;
+            border: #00c7fc;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+
+            svg {
+              width: 25px;
+              height: 15px;
+              fill: #fff;
+              display: inline-block;
+              margin-top: 0.125rem;
+            }
+
+            p {
+              display: inline-block;
+              float: right;
+              margin: 0.125rem 0 0.125rem 0.3125rem;
+            }
+          }
+
+          button:hover {
+            background: #fff;
+            color: #00c7fc;
+
+            svg {
+              fill: #00c7fc;
+            }
+          }
+          /** End of BUTTON **/
+        }
+        /** End of HEADING-BUTTON **/
+      }
+      /** End of MAIN-HEADING **/
+    }
+    /** End of MAIN-IMAGE-CONTENT **/
+  }
+  /** End of #HOME **/
+}
+/** End of MAIN **/
+/** TABLET MEDIA QUERY **/
+@media screen and (min-width: 500px) {
+  main {
+    #home {
+      height: 350px;
+
+      .main-image-content {
+        .main-heading {
+          h1 {
+            font-size: 3.125rem;
+          }
+
+          p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+          }
+
+          .break {
+            margin: 0 auto 1rem;
+          }
+
+          .heading-button {
+            margin-top: 3.125rem;
+
+            button {
+              svg {
+                width: 35px;
+                height: 25px;
+                margin-top: 0.3125rem;
+              }
+
+              p {
+                margin: 0.625rem 0 0.625rem 0.9375rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/** End of Tablet Media Query **/
+/** DESKTOP **/
+@media screen and (min-width: 768px) {
+  main {
+    #home {
+      height: 550px;
+      margin-top: 90px;
+    }
+  }
+}

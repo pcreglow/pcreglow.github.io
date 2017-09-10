@@ -1,0 +1,40 @@
+/** HEADER **/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.0rem;
+    margin: 0;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  h1 span {
+    color: #00c7fc;
+    font-weight: 600;
+    font-size: 2.0rem;
+  }
+}
+/** DESKTOP **/
+@media screen and (min-width: 768px) {
+  header {
+    height: 90px;
+
+    h1 {
+      font-size: 1.5rem;
+      padding: 1.25rem 0;
+      width: 40%;
+      float: left;
+    }
+
+    h1 span {
+      font-size: 2.5rem;
+    }
+  }
+}
